@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`atlas-gateway-client-view`
+Components for Atlas Frontend application.
+
+@demo demo/index-atlas-gateway-client-view.html 
+-->
+
+<dom-module id="atlas-gateway-client-view">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'atlas-gateway-client-view',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'atlas-gateway-client-view',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
