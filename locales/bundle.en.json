@@ -1,0 +1,76 @@
+{
+  "atlas-asset-profiling-view": {
+    "meta": {
+      "todo": [
+        {
+          "op": "add",
+          "path": "/h2_1/0",
+          "value": "Hello {1}"
+        },
+        {
+          "op": "add",
+          "path": "/h2_1/1",
+          "value": "[[prop1]]"
+        }
+      ]
+    },
+    "model": {},
+    "h2_1": [
+      "Hello {1}",
+      "[[prop1]]"
+    ]
+  },
+  "atlas-asset-status-view": {
+    "meta": {
+      "todo": [
+        {
+          "op": "add",
+          "path": "/status-title-label",
+          "value": "Status"
+        },
+        {
+          "op": "add",
+          "path": "/status-id-column-label",
+          "value": "Id"
+        },
+        {
+          "op": "add",
+          "path": "/status-type-column-label",
+          "value": "Type"
+        },
+        {
+          "op": "add",
+          "path": "/status-data-column-label",
+          "value": "Connections"
+        }
+      ]
+    },
+    "model": {},
+    "status-title-label": "Status",
+    "status-id-column-label": "Id",
+    "status-type-column-label": "Type",
+    "status-data-column-label": "Connections"
+  },
+  "atlas-gateway-client-view": {
+    "meta": {
+      "todo": [
+        {
+          "op": "add",
+          "path": "/h2_1/0",
+          "value": "Hello {1}"
+        },
+        {
+          "op": "add",
+          "path": "/h2_1/1",
+          "value": "[[prop1]]"
+        }
+      ]
+    },
+    "model": {},
+    "h2_1": [
+      "Hello {1}",
+      "[[prop1]]"
+    ]
+  },
+  "bundle": true
+}

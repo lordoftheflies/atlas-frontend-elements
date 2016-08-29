@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file xml:space="default" source-language="en" target-language="en" datatype="plaintext" original="messages" date="2016-08-29T11:36:36Z" product-name="messages">
+    <header>
+      <tool tool-id="xliff-conv" tool-name="xliff-conv" tool-version="1.0.9"/>
+    </header>
+    <body>
+      <trans-unit id="atlas-asset-profiling-view.h2_1.0">
+        <source>Hello {1}</source>
+        <target state="new">Hello {1}</target>
+      </trans-unit>
+      <trans-unit id="atlas-asset-profiling-view.h2_1.1">
+        <source>[[prop1]]</source>
+        <target state="new">[[prop1]]</target>
+      </trans-unit>
+      <trans-unit id="atlas-asset-status-view.status-title-label">
+        <source>Status</source>
+        <target state="new">Status</target>
+      </trans-unit>
+      <trans-unit id="atlas-asset-status-view.status-id-column-label">
+        <source>Id</source>
+        <target state="new">Id</target>
+      </trans-unit>
+      <trans-unit id="atlas-asset-status-view.status-type-column-label">
+        <source>Type</source>
+        <target state="new">Type</target>
+      </trans-unit>
+      <trans-unit id="atlas-asset-status-view.status-data-column-label">
+        <source>Connections</source>
+        <target state="new">Connections</target>
+      </trans-unit>
+      <trans-unit id="atlas-gateway-client-view.h2_1.0">
+        <source>Hello {1}</source>
+        <target state="new">Hello {1}</target>
+      </trans-unit>
+      <trans-unit id="atlas-gateway-client-view.h2_1.1">
+        <source>[[prop1]]</source>
+        <target state="new">[[prop1]]</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

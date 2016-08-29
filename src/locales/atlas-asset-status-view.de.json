@@ -1,1 +1,31 @@
-{}
+{
+  "meta": {
+    "todo": [
+      {
+        "op": "add",
+        "path": "/status-title-label",
+        "value": "Status"
+      },
+      {
+        "op": "add",
+        "path": "/status-id-column-label",
+        "value": "Id"
+      },
+      {
+        "op": "add",
+        "path": "/status-type-column-label",
+        "value": "Type"
+      },
+      {
+        "op": "add",
+        "path": "/status-data-column-label",
+        "value": "Connections"
+      }
+    ]
+  },
+  "model": {},
+  "status-title-label": "Status",
+  "status-id-column-label": "Id",
+  "status-type-column-label": "Type",
+  "status-data-column-label": "Connections"
+}

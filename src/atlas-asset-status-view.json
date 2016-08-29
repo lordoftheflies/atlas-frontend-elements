@@ -1,0 +1,8 @@
+{
+  "meta": {},
+  "model": {},
+  "status-title-label": "Status",
+  "status-id-column-label": "Id",
+  "status-type-column-label": "Type",
+  "status-data-column-label": "Connections"
+}

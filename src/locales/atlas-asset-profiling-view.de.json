@@ -1,1 +1,21 @@
-{}
+{
+  "meta": {
+    "todo": [
+      {
+        "op": "add",
+        "path": "/h2_1/0",
+        "value": "Hello {1}"
+      },
+      {
+        "op": "add",
+        "path": "/h2_1/1",
+        "value": "[[prop1]]"
+      }
+    ]
+  },
+  "model": {},
+  "h2_1": [
+    "Hello {1}",
+    "[[prop1]]"
+  ]
+}

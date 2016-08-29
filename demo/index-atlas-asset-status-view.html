@@ -1,29 +1,30 @@
 <!doctype html>
 <html>
-  <head>
-    <title>atlas-asset-status-view demo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <head>
+        <title>atlas-asset-status-view demo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+        <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
 
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+        <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+        <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
 
-    <link rel="import" href="../src/atlas-asset-status-view.html">
+        <link rel="import" href="../src/atlas-asset-status-view.html">
 
-    <style is="custom-style" include="demo-pages-shared-styles">
-    </style>
-  </head>
-  <body>
+        <style is="custom-style" include="demo-pages-shared-styles">
+        </style>
+    </head>
+    <body>
 
-    <div class="vertical-section-container centered">
-      <h3>Basic atlas-asset-status-view Demo</h3>
-      <demo-snippet>
-        <template>
-          <atlas-asset-status-view></atlas-asset-status-view>
-        </template>
-      </demo-snippet>
-    </div>
+        <div class="vertical-section-container centered">
+            <h3>Basic atlas-asset-status-view Demo</h3>
+            <demo-snippet>
+                <template>
+                    <atlas-asset-status-view id="view" modules='[{"id":"181","type":"TemperatureModul","attributes":[{"address":"B2","name":"Intakeair","value":69,"unit":"C"},{"address":"7F","name":"ReturnflowAir","value":63.9,"unit":"C"}]},{"id":"182","type":"DigitalModul","attributes":[{"address":"00","name":"Secondarypump"},{"address":"00","name":"Primarypump"},{"address":"00","name":"PowerforSecondarypump"},{"address":"00","name":"Mainmixingvalve","value":false}]},{"id":"183","type":"TemperatureModul","attributes":[{"address":"94","name":"Forerunair","value":66,"unit":"C"},{"address":"B9","name":"PreAir","value":18.5,"unit":"C"},{"address":"4B","name":"Outdoor","value":7.5,"unit":"C"}]},{"id":"185","type":"DigitalModul","attributes":[{"address":"00","name":"AirventillationswitchInverter"},{"address":"00","name":"PumpfloorheatingSouth"},{"address":"00","name":"PumpfloorheatingNorth"},{"address":"00","name":"PumpA/C"}]},{"id":"186","type":"TemperatureModul","attributes":[{"address":"E8","name":"SouthRoom","value":23.2,"unit":"C"},{"address":"F0","name":"NorthRoom","value":24,"unit":"C"},{"address":"80","name":"Unknown","value":12.8,"unit":"C"}]},{"id":"187","type":"Analogmodul","attributes":[]}]'></atlas-asset-status-view>
+                </template>
+            </demo-snippet>
+        </div>
 
-  </body>
+
+    </body>
 </html>

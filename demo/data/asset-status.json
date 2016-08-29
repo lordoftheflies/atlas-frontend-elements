@@ -1,0 +1,118 @@
+[
+    {
+        "id": "181",
+        "type": "Temperature Modul",
+        "attributes": [
+            {
+                "address": "B2",
+                "name": "Intake air",
+                "value": 69,
+                "unit": "C"
+            },
+            {
+                "address": "7F",
+                "name": "Return flow Air",
+                "value": 63.9,
+                "unit": "C"
+            }
+        ]
+    },
+    {
+        "id": "182",
+        "type": "Digital Modul",
+        "attributes": [
+            {
+                "address": "00",
+                "name": "Secondary pump"
+            },
+            {
+                "address": "00",
+                "name": "Primary pump"
+            },
+            {
+                "address": "00",
+                "name": "Power for Secondary pump"
+            },
+            {
+                "address": "00",
+                "name": "Main mixing valve",
+                "value": false
+            }
+        ]
+    },
+    {
+        "id": "183",
+        "type": "Temperature Modul",
+        "attributes": [
+            {
+                "address": "94",
+                "name": "Forerun air",
+                "value": 66,
+                "unit": "C"
+            },
+            {
+                "address": "B9",
+                "name": "Pre Air",
+                "value": 18.5,
+                "unit": "C"
+            },
+            {
+                "address": "4B",
+                "name": "Outdoor",
+                "value": 7.5,
+                "unit": "C"
+            }
+        ]
+    },
+     {
+        "id": "185",
+        "type": "Digital Modul",
+        "attributes": [
+            {
+                "address": "00",
+                "name": "Air ventillation switch Inverter"
+            },
+            {
+                "address": "00",
+                "name": "Pump floor heating South"
+            },
+            {
+                "address": "00",
+                "name": "Pump floor heating North"
+            },
+            {
+                "address": "00",
+                "name": "Pump A/C"
+            }
+        ]
+    },
+    {
+        "id": "186",
+        "type": "Temperature Modul",
+        "attributes": [
+            {
+                "address": "E8",
+                "name": "South Room",
+                "value":23.2,
+                "unit": "C"
+            },
+            {
+                "address": "F0",
+                "name": "North Room",
+                "value": 24,
+                "unit": "C"
+            },
+            {
+                "address": "80",
+                "name": "Unknown",
+                "value": 12.8,
+                "unit": "C"
+            }
+        ]
+    },
+    {
+        "id": "187",
+        "type": "Analog modul",
+        "attributes": []
+    },
+]

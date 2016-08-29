@@ -4,7 +4,9 @@
   "main": "atlas-frontend-elements.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
-    "i18n-behavior": "^1.1.8"
+    "i18n-behavior": "^1.1.8",
+    "paper-item": "polymerelements/paper-item#^1.2.1",
+    "paper-card": "polymerelements/paper-card#^1.1.2"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

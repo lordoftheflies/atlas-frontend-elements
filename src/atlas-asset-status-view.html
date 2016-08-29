@@ -1,5 +1,8 @@
 <link rel="import" href="../../polymer/polymer.html">
 <link rel="import" href="../../i18n-behavior/i18n-behavior.html">
+<link rel="import" href="../../paper-item/paper-item.html">
+<link rel="import" href="../../paper-card/paper-card.html">
+<link rel="import" href="../../iron-flex-layout/iron-flex-layout-classes.html">
 
 <!--
 `atlas-asset-status-view`
@@ -9,47 +12,48 @@ Components for Atlas Frontend application.
 -->
 
 <dom-module id="atlas-asset-status-view">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Status</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Type</th>
-                <th>Connections</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
-  </template>
+    <template>
+        <style include="iron-flex">
+            :host {
+                display: inline-block;
+                 @apply(--layout-vertical);
+            }
+        </style>
+        <h2 id="status-title-label">Status</h2>
+        <template is="dom-repeat" items$="[[modules]]" as="module">
+            <paper-card heading="[[module.type]] ([[module.id]])">
+                <div class="card-content">
+                    <template is="dom-repeat" items$="[[module.attributes]]" as="item">
+                              <paper-item>
+                            <paper-item-body two-line>
+                                <div>[[item.value]] [[item.unit]]</div>
+                                <div secondary>[[item.name]] ([[item.address]])</div>
+                            </paper-item-body>
+                        </paper-item>
+                    </template>
+                </div>
+            </paper-card>
+            <br />
+        </template>
+    </template>
 
-  <script>
-    Polymer({
-
-      is: 'atlas-asset-status-view',
-
-      behaviors: [
-        BehaviorsStore.I18nBehavior
-      ],
-
-      properties: {
-        prop1: {
-          type: String,
-          value: 'atlas-asset-status-view',
-        },
-      },
-
-    });
-  </script>
+    <script>
+        Polymer({
+            is: 'atlas-asset-status-view',
+            behaviors: [
+                BehaviorsStore.I18nBehavior
+            ],
+            properties: {
+                prop1: {
+                    type: String,
+                    value: 'atlas-asset-status-view',
+                    modules: {
+                        type: Array,
+                        value: [],
+                        notify: true
+                    }
+                },
+            },
+        });
+    </script>
 </dom-module>
