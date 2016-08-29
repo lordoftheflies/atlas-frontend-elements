@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../i18n-behavior/i18n-behavior.html">
 
 <!--
 `atlas-asset-profiling-view`
@@ -22,7 +23,12 @@ Components for Atlas Frontend application.
 
       is: 'atlas-asset-profiling-view',
 
+      behaviors: [
+        BehaviorsStore.I18nBehavior
+      ],
+
       properties: {
+          
         prop1: {
           type: String,
           value: 'atlas-asset-profiling-view',

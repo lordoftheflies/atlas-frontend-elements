@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../i18n-behavior/i18n-behavior.html">
 
 <!--
 `atlas-gateway-client-view`
@@ -21,6 +22,10 @@ Components for Atlas Frontend application.
     Polymer({
 
       is: 'atlas-gateway-client-view',
+
+      behaviors: [
+        BehaviorsStore.I18nBehavior
+      ],
 
       properties: {
         prop1: {
