@@ -6,7 +6,11 @@
     "polymer": "Polymer/polymer#^1.4.0",
     "i18n-behavior": "^1.1.8",
     "paper-item": "polymerelements/paper-item#^1.2.1",
-    "paper-card": "polymerelements/paper-card#^1.1.2"
+    "paper-card": "polymerelements/paper-card#^1.1.2",
+    "paper-toggle-button": "polymerelements/paper-toggle-button#^1.2.0",
+    "paper-input": "polymerelements/paper-input#^1.1.17",
+    "paper-radio-button": "polymerelements/paper-radio-button#^1.2.1",
+    "paper-radio-group": "polymerelements/paper-radio-group#^1.2.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
