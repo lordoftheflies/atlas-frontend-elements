@@ -1,8 +1,8 @@
 {
   "fragments": [
-    "atlas-frontend-elements/atlas-asset-profiling-view.html",
-    "atlas-frontend-elements/atlas-asset-status-view.html",
-    "atlas-frontend-elements/atlas-gateway-client-view.html"
+    "atlas-asset-profiling-view.html",
+    "atlas-asset-status-view.html",
+    "atlas-gateway-client-view.html"
   ],
   "sourceGlobs": [
     "src/**/*",
