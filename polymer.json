@@ -1,0 +1,20 @@
+{
+  "fragments": [
+    "atlas-frontend-elements/atlas-asset-profiling-view.html",
+    "atlas-frontend-elements/atlas-asset-status-view.html",
+    "atlas-frontend-elements/atlas-gateway-client-view.html"
+  ],
+  "sourceGlobs": [
+    "src/**/*",
+    "images/**/*",
+    "locales/*",
+    "xliff/*",
+    "bundle.json",
+    "bower.json"
+  ],
+  "includeDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/webcomponents-lite.min.js",
+    "bower_components/intl/**/*"
+  ]
+}
