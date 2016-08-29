@@ -1,5 +1,10 @@
 <link rel="import" href="../../polymer/polymer.html">
 <link rel="import" href="../../i18n-behavior/i18n-behavior.html">
+<link rel="import" href="../../paper-card/paper-card.html">
+<link rel="import" href="../../paper-input/paper-input.html">
+<link rel="import" href="../../paper-input/paper-textarea.html">
+<link rel="import" href="../../paper-button/paper-button.html">
+<link rel="import" href="../../iron-flex-layout/iron-flex-layout-classes.html">
 
 <!--
 `atlas-gateway-client-view`
@@ -9,31 +14,47 @@ Components for Atlas Frontend application.
 -->
 
 <dom-module id="atlas-gateway-client-view">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]</h2>
-  </template>
+    <template>
+        <style include="iron-flex">
+            :host {
+                display: block;
+            }
+        </style>
+        <paper-card id="gateway-client-title-label" heading="Can">
+            <div class="card-actions">
+                <paper-button id="gateway-start-reading-label" raised>Start reading</paper-button>
+                <paper-button id="gateway-stop-reading-label" raised>Stop reading</paper-button>
+            </div>
+            <div class="card-content">
+                <div class="layout horizontal">
+                    <paper-input label="Id"></paper-input>
+                    <paper-input label="Length"></paper-input>
+                    <paper-input label="Data"></paper-input>
 
-  <script>
-    Polymer({
+                    <paper-button id="gateway-send-message-label" raised>Send</paper-button>
+                </div>
+                <br/>
+                <label id="gateway-output-label">Output</label>
+                <paper-textarea></paper-textarea>
 
-      is: 'atlas-gateway-client-view',
+            </div>
 
-      behaviors: [
-        BehaviorsStore.I18nBehavior
-      ],
+        </paper-card>
 
-      properties: {
-        prop1: {
-          type: String,
-          value: 'atlas-gateway-client-view',
-        },
-      },
+    </template>
 
-    });
-  </script>
+    <script>
+        Polymer({
+            is: 'atlas-gateway-client-view',
+            behaviors: [
+                BehaviorsStore.I18nBehavior
+            ],
+            properties: {
+                prop1: {
+                    type: String,
+                    value: 'atlas-gateway-client-view',
+                },
+            },
+        });
+    </script>
 </dom-module>
