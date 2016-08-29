@@ -17,36 +17,38 @@ Components for Atlas Frontend application.
         <style include="iron-flex">
             :host {
                 display: inline-block;
-                @apply(--layout-horizontal);
-                @apply(--layout-wrap);
+                @apply(--layout-vertical);
             }
+            
         </style>
-        <h2>Profiling</h2>
-        <paper-card heading="Record CAN messages">
-            <div class="card-content">
-                <paper-toggle-button>Enable</paper-toggle-button>
-                <paper-radio-group aria-labelledby="level">
-                    <paper-radio-button name="alarms">Alarms</paper-radio-button>
-                    <paper-radio-button name="details">In-details</paper-radio-button>
-                </paper-radio-group>
-                <paper-input label="Folder"></paper-input>
-            </div>
-        </paper-card>
-        <br/>
-        <paper-card heading="Record error messages">
-            <div class="card-content">
-                <paper-toggle-button>Enable</paper-toggle-button>
-                <paper-input label="Folder"></paper-input>
-            </div>
-        </paper-card>
-        <br/>
-        <paper-card heading="Record heating data">
-            <div class="card-content">
-                <paper-toggle-button>Enable</paper-toggle-button>
-                <paper-input label="Interval" type="number"></paper-input>
-                <paper-input label="Folder"></paper-input>
-            </div>
-        </paper-card>
+        <h2 id="profiling-title-label">Profiling</h2>
+        <div class="work-area">
+            <paper-card heading="Record CAN messages">
+                <div class="card-content">
+                    <paper-toggle-button id="enable-record-messages-label">Enable</paper-toggle-button>
+                    <paper-radio-group aria-labelledby="level">
+                        <paper-radio-button id="record-alarm-messages-label" name="alarms">Alarms</paper-radio-button>
+                        <paper-radio-button id="record-detailed-messages-label" name="details">In-details</paper-radio-button>
+                    </paper-radio-group>
+                    <paper-input id="record-messages-folder-label" label="Folder"></paper-input>
+                </div>
+            </paper-card>
+            <br/>
+            <paper-card heading="Record error messages">
+                <div class="card-content">
+                    <paper-toggle-button id="enable-record-errors-label">Enable</paper-toggle-button>
+                    <paper-input id="record-errors-folder-label" label="Folder"></paper-input>
+                </div>
+            </paper-card>
+            <br/>
+            <paper-card heading="Record heating data">
+                <div class="card-content">
+                    <paper-toggle-button id="enable-record-data-label">Enable</paper-toggle-button>
+                    <paper-input label="Interval" type="number"></paper-input>
+                    <paper-input id="record-data-folder-label" label="Folder"></paper-input>
+                </div>
+            </paper-card>
+        </div>
     </template>
 
     <script>
