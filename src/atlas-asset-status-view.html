@@ -16,20 +16,38 @@ Components for Atlas Frontend application.
         <style include="iron-flex">
             :host {
                 display: inline-block;
-                 @apply(--layout-vertical);
+                @apply(--layout-vertical);
+            }
+
+            :host .gadget-unit {
+                font-size: 0.75em;
+                margin-left: 4px;
+                vertical-align: top;
+                display: inline-block;
+            }
+            :host .gadget-value {
+                font-size: 1.5em;
+            }
+            :host .gadget-name {
+
             }
         </style>
         <h2 id="status-title-label">Status</h2>
         <template is="dom-repeat" items$="[[modules]]" as="module">
-            <paper-card heading="[[module.type]] ([[module.id]])">
-                <div class="card-content">
+                  <paper-card heading="[[module.type]] ([[module.id]])">
+                <div class="card-content layout horizontal wrap">
                     <template is="dom-repeat" items$="[[module.attributes]]" as="item">
                               <paper-item>
                             <paper-item-body two-line>
-                                <div>[[item.value]] [[item.unit]]</div>
-                                <div secondary>[[item.name]] ([[item.address]])</div>
+                                <div class="layout horizontal">
+                                    <span class="flex"></span>
+                                    <label class="gadget-value">[[item.value]]</label>
+                                    <span class="gadget-unit">[[item.unit]]</span>
+                                </div>
+                                <div class="gadget-name" secondary>[[item.name]] ([[item.address]])</div>
                             </paper-item-body>
                         </paper-item>
+                        <br />
                     </template>
                 </div>
             </paper-card>
